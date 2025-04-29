@@ -55,7 +55,7 @@ NPM (Node.js) Packages:
 
 Instructions for setting up B.A.T.M.A.N Ad Hoc networks on a Raspberry Pi can be found inside the setup-batman.sh script in the root directory. This is essential for multiple devices to operate in a single mesh network
 
-The mosquitto service needs to be enabled on a Raspberry Pi acting as an MQTT broker. It also needs to have an additional line in the file /etc/mosquitto.conf that says "allow_anonymous_connections FALSE" to ensure the network is TLS encrypted.
+The mosquitto service needs to be enabled on a Raspberry Pi acting as an MQTT broker. It also needs to have an additional line in the file /etc/mosquitto.conf that says "allow_anonymous_connections FALSE" to only allow traffic that is properly encrypted with TLS.
 
 Lastly, the server (windows computer) needs to have a static IP pinned down on the ethernet port. It then needs to run 3 scripts:
 1. /full_internet_server_code/app.js
