@@ -53,9 +53,18 @@ NPM (Node.js) Packages:
 
 ## Usage
 
-Add usage description here
+Instructions for setting up B.A.T.M.A.N Ad Hoc networks on a Raspberry Pi can be found inside the setup-batman.sh script in the root directory. This is essential for multiple devices to operate in a single mesh network
 
+The mosquitto service needs to be enabled on a Raspberry Pi acting as an MQTT broker. It also needs to have an additional line in the file /etc/mosquitto.conf that says "allow_anonymous_connections FALSE" to ensure the network is TLS encrypted.
+
+Lastly, the server (windows computer) needs to have a static IP pinned down on the ethernet port. It then needs to run 3 scripts:
+1. /full_internet_server_code/app.js
+2. /airport_server_code/server_main.py
+3. /user_code/GUI.py
+While the GUI works on other devices (such as mobile devices) due to HTTPS support, the GUI file needs to be running on the server for this connection to work. A request to the server's public IPv4 is also required for this interface to work on other devices.
 
 ## Results and Demonstration
+
+With the default configuration for the Wi-Fi transciever on the Raspberry Pi 3B+, our team found a range of at least 40ft with a 3 device multi-hop. That range could be greatly expanded if a more powerful antenna was installed.
 
 A live demo of this project can be found [HERE](https://youtu.be/4kCJANxVGjQ)
