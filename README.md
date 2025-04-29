@@ -31,6 +31,7 @@ This project aims to develop an open-source Internet of Things (IoT) system for 
 - [Mosquitto](https://mosquitto.org/)
 - [Node.js](https://github.com/nodejs/node)
 - [Python 3.13](https://www.python.org/downloads/release/python-3133/)
+- [OpenSSL](https://github.com/openssl/openssl)
 
 PIP (Python) Packages:
 - [DateTime](https://pypi.org/project/DateTime/)
