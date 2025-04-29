@@ -61,6 +61,7 @@ Lastly, the server (windows computer) needs to have a static IP pinned down on t
 1. /full_internet_server_code/app.js
 2. /airport_server_code/server_main.py
 3. /user_code/GUI.py
+
 While the GUI works on other devices (such as mobile devices) due to HTTPS support, the GUI file needs to be running on the server for this connection to work. A request to the server's public IPv4 is also required for this interface to work on other devices.
 
 ## Results and Demonstration
